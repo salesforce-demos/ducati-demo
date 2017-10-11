@@ -18,7 +18,7 @@ export class HomePage {
       const toast = this.toastCtrl.create({
         message: data.message,
         duration: 10000,
-        position: 'top'
+        position: 'bottom'
       });
 
       toast.present();
