@@ -24,3 +24,5 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
+# Here is the page in the salesforce org that can be used to test the message functionality
+https://ducati-campdf17.lightning.force.com/one/one.app?source=aloha#/n/DucatiNotificationDemo
