@@ -11,7 +11,7 @@ import { FaceBookPage } from '../facebook/facebook';
 export class LoginPage {
 
   constructor(public nav: NavController, private socket: Socket, public toastCtrl: ToastController) {
-
+    /*
     this.socket.on('message', (data) => {
 
       console.log(data);
@@ -24,6 +24,7 @@ export class LoginPage {
 
       toast.present();
     });
+    */
   }
 
 

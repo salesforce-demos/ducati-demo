@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { ModalController, Slides } from 'ionic-angular';
+import { Socket } from 'ng-socket-io';
 import { PopUpPage } from '../popup/popup';
 import { ItemPage } from '../item/item';
 
@@ -10,8 +11,8 @@ import { ItemPage } from '../item/item';
 export class ProfilePage {
   @ViewChild(Slides) slides: Slides;
 
-  constructor(public modal: ModalController) {
-
+  constructor(public modal: ModalController, private socket: Socket) {
+    this.socket.on('message', (data) => this.openModal(''));
   }
 
   goToSlide(i) {

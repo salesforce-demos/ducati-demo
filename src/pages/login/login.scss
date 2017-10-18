@@ -5,4 +5,13 @@
     height: 100%;
     width: 100%;
   }
+  &-facebook-link {
+    display: block;
+    height: 45px;
+    width: 45px;
+    bottom: 26px;
+    left: 78px;
+    position: absolute;
+    cursor: pointer;
+  }
 }

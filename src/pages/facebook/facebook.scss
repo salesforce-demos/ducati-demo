@@ -5,4 +5,13 @@
     height: 100%;
     width: 100%;
   }
+  &-ok-link {
+    display: block;
+    height: 45px;
+    width: 133px;
+    bottom: 18px;
+    right: 43px;
+    position: absolute;
+    cursor: pointer;
+  }
 }

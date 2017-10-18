@@ -5,4 +5,13 @@
     height: 100%;
     width: 100%;
   }
+  &-started-link {
+    display: block;
+    height: 45px;
+    width: 133px;
+    bottom: 39px;
+    right: 121px;
+    position: absolute;
+    cursor: pointer;
+  }
 }
