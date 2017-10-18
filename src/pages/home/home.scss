@@ -1,3 +1,26 @@
-page-home {
-
+.page-home {
 }
+
+.tabs-ios {
+  .tab-button {
+    min-height: 80px;
+    font-size: 12px;
+    &-icon {
+      font-size: 40px;
+      height: 40px;
+    }
+  }
+}
+/*
+.tabs-ios-dark {
+  .tab-button[aria-selected=true] .tab-button-icon {
+    color: color($colors, 'danger');
+  }
+  .tab-button {
+    &-text,
+    &-icon {
+      color: color($colors, 'danger');
+    }
+  }
+}
+*/

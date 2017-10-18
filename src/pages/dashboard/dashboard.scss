@@ -1,0 +1,16 @@
+.page-dashboard {
+  &-bg {
+    background: url(../../assets/bg/dashboard.png) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  &-map-link {
+    display: block;
+    position: absolute;
+    top: 180px;
+    left: 71px;
+    width: 142px;
+    height: 46px;
+  }
+}

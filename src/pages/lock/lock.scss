@@ -1,0 +1,16 @@
+.page-lock {
+  &-bg {
+    background: url(../../assets/bg/profile-lock.png) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  &-unlock-link {
+    top: 198px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 18px;
+    cursor: pointer;
+  }
+}

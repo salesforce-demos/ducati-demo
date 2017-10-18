@@ -1,0 +1,16 @@
+.page-ride {
+  &-bg {
+    background: url(../../assets/bg/ride.png) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  &-dashboard-link {
+    display: block;
+    position: absolute;
+    top: 180px;
+    right: 71px;
+    width: 142px;
+    height: 46px;
+  }
+}

@@ -1,0 +1,26 @@
+.page-popup {
+  &-bg {
+    background: url(../../assets/bg/popup.png) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  &-back-link {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 142px;
+    height: 46px;
+    cursor: pointer;
+  }
+  &-show-link {
+    display: block;
+    position: absolute;
+    bottom: 141px;
+    left: 117px;
+    width: 150px;
+    height: 120px;
+    cursor: pointer;
+  }
+}

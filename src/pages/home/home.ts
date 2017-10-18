@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { ToastController } from 'ionic-angular';
-import { Socket } from 'ng-socket-io';
+import { DiscoverPage } from '../discover/discover';
+import { RidePage } from '../ride/ride';
+import { ProfilePage } from '../profile/profile';
 
 @Component({
   selector: 'page-home',
@@ -9,20 +10,11 @@ import { Socket } from 'ng-socket-io';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, private socket: Socket, public toastCtrl: ToastController) {
+  DiscoverPage = DiscoverPage;
+  RidePage = RidePage;
+  ProfilePage = ProfilePage;
 
-    this.socket.on('message', (data) => {
-
-      console.log(data);
-
-      const toast = this.toastCtrl.create({
-        message: data.message,
-        duration: 10000,
-        position: 'bottom'
-      });
-
-      toast.present();
-    });
+  constructor(public nav: NavController) {
   }
 
 }
