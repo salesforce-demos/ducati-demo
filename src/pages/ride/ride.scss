@@ -1,16 +1,30 @@
 .page-ride {
-  &-bg {
-    background: url(../../assets/bg/ride.png) no-repeat center center;
+  &-header {
+    background: url(../../assets/bg/ride-header.png) no-repeat center center;
     background-size: cover;
-    height: 100%;
+    height: 155px;
     width: 100%;
   }
-  &-dashboard-link {
+  &-link {
     display: block;
     position: absolute;
-    top: 180px;
-    right: 71px;
-    width: 142px;
     height: 46px;
+    top: 9px;
+    cursor: pointer;
+    &--map {
+      left: 70px;
+      width: 113px;
+    }
+    &--dashboard {
+      right: 66px;
+      width: 125px;
+    }
   }
+}
+
+.swiper-slide {
+  align-items: start;
+}
+.swiper-slide img {
+  width: 100%;
 }

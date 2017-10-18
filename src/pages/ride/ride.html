@@ -1,5 +1,10 @@
 <ion-content>
-  <div class="page-ride-bg">
-    <a (click)="dashboard()" class="page-ride-dashboard-link"></a>
-  </div>
+  <div class="page-ride-header"></div>
+  <ion-slides loop="true">
+    <ion-slide *ngFor="let image of [1,2]">
+      <a (click)="goToSlide(1)" class="page-ride-link page-ride-link--map"></a>
+      <a (click)="goToSlide(2)" class="page-ride-link page-ride-link--dashboard"></a>
+      <img data-src="./assets/slide/ride/{{image}}.png" />
+    </ion-slide>
+  </ion-slides>
 </ion-content>

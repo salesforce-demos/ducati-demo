@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { DashboardPage } from '../dashboard/dashboard';
+import { Slides } from 'ionic-angular';
 
 @Component({
   selector: 'page-ride',
@@ -8,12 +8,14 @@ import { DashboardPage } from '../dashboard/dashboard';
 })
 export class RidePage {
 
+  @ViewChild(Slides) slides: Slides;
+
   constructor(public nav: NavController) {
 
   }
 
-  dashboard() {
-    this.nav.push(DashboardPage);
+  goToSlide(i) {
+    this.slides.slideTo(i);
   }
 
 }

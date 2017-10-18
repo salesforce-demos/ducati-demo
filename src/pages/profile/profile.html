@@ -1,6 +1,13 @@
 <ion-content>
-  <div class="page-profile-bg">
-    <a (click)="lock()" class="page-profile-lock-link"></a>
-    <a (click)="openModal()" class="page-profile-popup-link"></a>
+  <div class="page-profile-header">
+    <a (click)="openModal()" class="page-profile-link page-profile-link--show-modal"></a>
   </div>
+  <ion-slides loop="true">
+    <ion-slide *ngFor="let image of [1,2]">
+      <a (click)="goToSlide(1)" class="page-profile-link page-profile-link--unlock"></a>
+      <a (click)="goToSlide(2)" class="page-profile-link page-profile-link--lock"></a>
+      <a (click)="openModal('item')" class="page-profile-link page-profile-link--show-modal-item" *ngIf="image == 2"></a>
+      <img data-src="./assets/slide/profile/{{image}}.png" />
+    </ion-slide>
+  </ion-slides>
 </ion-content>

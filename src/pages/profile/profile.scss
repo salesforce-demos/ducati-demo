@@ -1,26 +1,44 @@
 .page-profile {
-  &-bg {
-    background: url(../../assets/bg/profile.png) no-repeat center center;
+  &-header {
+    background: url(../../assets/bg/profile-header.png) no-repeat center center;
     background-size: cover;
-    height: 100%;
+    height: 85px;
     width: 100%;
   }
-  &-lock-link {
+  &-link {
     display: block;
-    width: 50px;
-    height: 45px;
-    top: 201px;
     position: absolute;
-    left: 70px;
+    height: 46px;
     cursor: pointer;
+    &--lock {
+      left: 75px;
+      top: 115px;
+      width: 40px;
+      height: 40px;
+    }
+    &--unlock {
+      left: 24px;
+      width: 40px;
+      height: 40px;
+      top: 115px;
+    }
+    &--show-modal {
+      right: 10px;
+      width: 50px;
+      top: 40px;
+    }
+    &--show-modal-item {
+      bottom: 36px;
+      width: 150px;
+      height: 150px;
+      left: 22px;
+    }
   }
-  &-popup-link {
-    display: block;
-    width: 100px;
-    height: 42px;
-    bottom: 0;
-    position: absolute;
-    right: 20px;
-    cursor: pointer;
-  }
+}
+
+.swiper-slide {
+  align-items: start;
+}
+.swiper-slide img {
+  width: 100%;
 }

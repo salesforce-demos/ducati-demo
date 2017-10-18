@@ -1,24 +1,25 @@
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { ModalController } from 'ionic-angular';
-import { LockPage } from '../lock/lock';
+import { Component, ViewChild } from '@angular/core';
+import { ModalController, Slides } from 'ionic-angular';
 import { PopUpPage } from '../popup/popup';
+import { ItemPage } from '../item/item';
 
 @Component({
   selector: 'page-profile',
   templateUrl: 'profile.html'
 })
 export class ProfilePage {
+  @ViewChild(Slides) slides: Slides;
 
-  constructor(public nav: NavController, public modal: ModalController) {
+  constructor(public modal: ModalController) {
 
   }
 
-  lock() {
-    this.nav.push(LockPage);
+  goToSlide(i) {
+    this.slides.slideTo(i);
   }
 
-  openModal() {
-    this.modal.create(PopUpPage).present();
+  openModal(which) {
+    const page = which === 'item' ? ItemPage : PopUpPage;
+    this.modal.create(page).present();
   }
 }
