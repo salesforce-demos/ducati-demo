@@ -1,6 +1,7 @@
 .page-ride {
   &-header {
-    background: url(../../assets/bg/ride-header.png) no-repeat center center;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
     height: 155px;
     width: 100%;
