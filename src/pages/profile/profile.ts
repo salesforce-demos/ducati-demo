@@ -10,13 +10,13 @@ import { ItemPage } from '../item/item';
 })
 export class ProfilePage {
   @ViewChild(Slides) slides: Slides;
-
+  current: number = 1;
   constructor(public modal: ModalController, private socket: Socket) {
     this.socket.on('message', (data) => this.openModal(''));
   }
 
   goToSlide(i) {
-    this.slides.slideTo(i);
+    this.slides.slideTo(this.current = i);
   }
 
   openModal(which) {

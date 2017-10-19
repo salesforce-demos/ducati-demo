@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1338 1002 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-discover);
+      }
+
+      .cls-2 {
+        fill: #d5d5d5;
+        stroke: #d5d5d5;
+      }
+
+      .cls-3 {
+        fill: transparent;
+      }
+    </style>
+    <clipPath id="clip-discover">
+      <rect x="1338" y="1002" width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="discover" class="cls-1">
+    <rect class="cls-3" x="1338" y="1002" width="32" height="32"/>
+    <path id="Path_488" data-name="Path 488" class="cls-2" d="M-1309.836-979q-3.923-11.5-7.845-23h1.048l9.633,23Zm-11.262,0-.078-1.908h-2.842q-.039.953-.078,1.908h-8.328q3.1-11.5,6.193-23h3.08q-.039.953-.078,1.908h1.265l-.078-1.908h3.081q3.1,11.5,6.192,23Zm-2.585-10.071q-.109,2.653-.218,5.305h2.606q-.108-2.653-.218-5.306Zm.117-2.857h1.937q-.109-2.653-.218-5.306h-1.5Q-1323.455-994.581-1323.565-991.929ZM-1338-979l9.633-23h1.049l-7.846,23Z" transform="translate(2676.5 2008.5)"/>
+  </g>
+</svg>

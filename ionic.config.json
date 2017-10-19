@@ -1,6 +1,6 @@
 {
   "name": "ducati-demo",
-  "app_id": "",
+  "app_id": "45aa4754",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

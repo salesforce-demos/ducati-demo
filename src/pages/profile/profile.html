@@ -1,12 +1,18 @@
 <ion-content>
-  <div class="page-profile-header" style="background-image: url('assets/bg/profile-header.png')">
+  <div style="display:none;">
+    <div style="background-image: url('assets/bg/profile-header-1.png')"></div>
+    <div style="background-image: url('assets/bg/profile-header-2.png')"></div>
+  </div>
+  <a (click)="goToSlide(1)" class="page-profile-link page-profile-link--unlock"></a>
+  <a (click)="goToSlide(2)" class="page-profile-link page-profile-link--lock"></a>
+  <div class="page-profile-header" style="background-image: url('assets/bg/profile-header-1.png')" *ngIf="current == 1">
+    <a (click)="openModal()" class="page-profile-link page-profile-link--show-modal"></a>
+  </div>
+  <div class="page-profile-header" style="background-image: url('assets/bg/profile-header-2.png')" *ngIf="current == 2">
     <a (click)="openModal()" class="page-profile-link page-profile-link--show-modal"></a>
   </div>
   <ion-slides loop="true">
-    <ion-slide *ngFor="let image of [1,2]">
-      <a (click)="goToSlide(1)" class="page-profile-link page-profile-link--unlock"></a>
-      <a (click)="goToSlide(2)" class="page-profile-link page-profile-link--lock"></a>
-      <a (click)="openModal('item')" class="page-profile-link page-profile-link--show-modal-item" *ngIf="image == 2"></a>
+    <ion-slide *ngFor="let image of [1, 2]">
       <img data-src="./assets/slide/profile/{{image}}.png" />
     </ion-slide>
   </ion-slides>

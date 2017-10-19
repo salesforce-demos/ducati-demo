@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 85px;
+    height: 337px;
     width: 100%;
   }
   &-link {
@@ -11,9 +11,10 @@
     position: absolute;
     height: 46px;
     cursor: pointer;
+    border: 1px solid red;
     &--lock {
       left: 75px;
-      top: 115px;
+      top: 335px;
       width: 40px;
       height: 40px;
     }
@@ -21,12 +22,12 @@
       left: 24px;
       width: 40px;
       height: 40px;
-      top: 115px;
+      top: 335px;
     }
     &--show-modal {
       right: 10px;
       width: 50px;
-      top: 40px;
+      top: 130px;
     }
     &--show-modal-item {
       bottom: 36px;
