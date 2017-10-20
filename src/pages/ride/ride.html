@@ -1,10 +1,9 @@
 <ion-content>
-  <div class="page-ride-header" style="background-image: url('assets/bg/ride-header.png')"></div>
-  <ion-slides loop="true">
-    <ion-slide *ngFor="let image of [1,2]">
-      <a (click)="goToSlide(1)" class="page-ride-link page-ride-link--map"></a>
-      <a (click)="goToSlide(2)" class="page-ride-link page-ride-link--dashboard"></a>
-      <img data-src="./assets/slide/ride/{{image}}.png" />
-    </ion-slide>
-  </ion-slides>
+  <div ion-fixed>
+    <img src="assets/bg/ride-header.png" />
+    <a (click)="goToSlide(1)" class="page-ride-link page-ride-link--map"></a>
+    <a (click)="goToSlide(2)" class="page-ride-link page-ride-link--dashboard"></a>
+    <img src="assets/slide/ride/1.png" [hidden]="current == 2" />
+    <img src="assets/slide/ride/2.png" [hidden]="current == 1" />
+  </div>
 </ion-content>

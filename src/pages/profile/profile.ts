@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { ModalController, Slides } from 'ionic-angular';
+import { ModalController } from 'ionic-angular';
 import { Socket } from 'ng-socket-io';
 import { PopUpPage } from '../popup/popup';
 import { ItemPage } from '../item/item';
@@ -9,14 +9,13 @@ import { ItemPage } from '../item/item';
   templateUrl: 'profile.html'
 })
 export class ProfilePage {
-  @ViewChild(Slides) slides: Slides;
   current: number = 1;
   constructor(public modal: ModalController, private socket: Socket) {
     this.socket.on('message', (data) => this.openModal(''));
   }
 
   goToSlide(i) {
-    this.slides.slideTo(this.current = i);
+    this.current = i;
   }
 
   openModal(which) {
