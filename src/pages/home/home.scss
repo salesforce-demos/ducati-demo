@@ -1,6 +1,6 @@
 .page-home {
 }
-/*
+
 .tabs-ios {
   .tab-button {
     min-height: 80px;
@@ -11,17 +11,15 @@
     }
   }
 }
-*/
-/*
+
 .tabs-ios-dark {
   .tab-button[aria-selected=true] .tab-button-icon {
-    color: color($colors, 'danger');
+    color: #d5d5d5;
   }
   .tab-button {
-    &-text,
+    /*&-text,*/
     &-icon {
-      color: color($colors, 'danger');
+      color: #d5d5d5;
     }
   }
 }
-*/

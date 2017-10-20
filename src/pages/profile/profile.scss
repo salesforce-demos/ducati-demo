@@ -11,10 +11,9 @@
     position: absolute;
     height: 46px;
     cursor: pointer;
-    border: 1px solid;
     &--lock {
       left: 85px;
-      top: 320px;
+      top: 290px;
       width: 45px;
       height: 45px;
     }
@@ -22,12 +21,12 @@
       left: 24px;
       width: 45px;
       height: 45px;
-      top: 320px;
+      top: 290px;
     }
     &--show-modal {
       right: 10px;
       width: 50px;
-      top: 100px;
+      top: 80px;
     }
     &--show-modal-item {
       bottom: 36px;

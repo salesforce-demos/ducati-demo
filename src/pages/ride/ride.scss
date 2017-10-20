@@ -10,16 +10,15 @@
     display: block;
     position: absolute;
     height: 46px;
-    top: 200px;
-    border: 1px solid red;
     cursor: pointer;
+    top: 180px;
     &--map {
-      left: 63px;
-      width: 102px;
+      left: 70px;
+      width: 128px;
     }
     &--dashboard {
-      right: 66px;
-      width: 107px;
+      right: 72px;
+      width: 140px;
     }
   }
 }
