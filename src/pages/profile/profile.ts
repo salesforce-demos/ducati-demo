@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { ModalController } from 'ionic-angular';
 import { Socket } from 'ng-socket-io';
 import { PopUpPage } from '../popup/popup';
