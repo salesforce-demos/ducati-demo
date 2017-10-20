@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { ModalController } from 'ionic-angular';
+import { ModalController, NavController, App } from 'ionic-angular';
 import { Socket } from 'ng-socket-io';
 import { PopUpPage } from '../popup/popup';
 import { ItemPage } from '../item/item';
+import { LoginPage } from '../login/login';
 
 @Component({
   selector: 'page-profile',
@@ -10,8 +11,12 @@ import { ItemPage } from '../item/item';
 })
 export class ProfilePage {
   current: number = 1;
-  constructor(public modal: ModalController, private socket: Socket) {
+  constructor(private app: App, public modal: ModalController, private socket: Socket, public nav: NavController) {
     this.socket.on('message', (data) => this.openModal(''));
+  }
+
+  reset() {
+    this.app.getRootNav().setRoot(LoginPage);
   }
 
   goToSlide(i) {

@@ -1,5 +1,6 @@
 <ion-content>
   <div ion-fixed>
+    <a (click)="reset()" class="page-profile-link page-profile-link--reset"></a>
     <a (click)="goToSlide(1)" class="page-profile-link page-profile-link--unlock"></a>
     <a (click)="goToSlide(2)" class="page-profile-link page-profile-link--lock"></a>
     <div class="page-profile-header" [hidden]="current == 2">
