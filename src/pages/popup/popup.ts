@@ -1,14 +1,13 @@
-import { Component } from '@angular/core';
-import { ModalController } from 'ionic-angular';
+import { Component, ViewChild } from '@angular/core';
+import { ModalController, Slides } from 'ionic-angular';
 import { ViewController } from 'ionic-angular';
-import { ItemPage } from '../item/item';
 
 @Component({
   selector: 'page-popup',
   templateUrl: 'popup.html'
 })
 export class PopUpPage {
-
+  @ViewChild(Slides) slides: Slides;
   constructor(public modal: ModalController, public view: ViewController) {
 
   }
@@ -17,8 +16,8 @@ export class PopUpPage {
     this.view.dismiss();
   }
 
-  show() {
-    this.modal.create(ItemPage).present();
+  next() {
+    this.slides.slideNext();
   }
 
 }

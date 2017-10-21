@@ -1,4 +1,19 @@
 .page-popup {
+  &-slides {
+    &-first {
+      width: 90% !important;
+    }
+    &-last {
+      width: 80% !important;
+    }
+    &-wrapper {
+      width: 350px;
+      height: 600px;
+      position: absolute;
+      left: 33px;
+      top: 69px;
+    }
+  }
   &-bg {
     background-repeat: no-repeat;
     background-position: center center;

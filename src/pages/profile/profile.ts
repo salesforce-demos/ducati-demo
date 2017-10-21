@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { ModalController, NavController, App } from 'ionic-angular';
 import { Socket } from 'ng-socket-io';
 import { PopUpPage } from '../popup/popup';
-import { ItemPage } from '../item/item';
 import { LoginPage } from '../login/login';
 
 @Component({
@@ -12,7 +11,7 @@ import { LoginPage } from '../login/login';
 export class ProfilePage {
   current: number = 1;
   constructor(private app: App, public modal: ModalController, private socket: Socket, public nav: NavController) {
-    this.socket.on('message', (data) => this.openModal(''));
+    this.socket.on('message', (data) => this.openModal());
   }
 
   reset() {
@@ -23,8 +22,7 @@ export class ProfilePage {
     this.current = i;
   }
 
-  openModal(which) {
-    const page = which === 'item' ? ItemPage : PopUpPage;
-    this.modal.create(page).present();
+  openModal() {
+    this.modal.create(PopUpPage).present();
   }
 }

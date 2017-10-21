@@ -1,6 +1,16 @@
 <ion-content>
   <div class="page-popup-bg" style="background-image: url('assets/bg/popup.png')">
     <a (click)="back()" class="page-popup-back-link"></a>
-    <a (click)="show()" class="page-popup-show-link"></a>
+    <a (click)="next()" class="page-popup-show-link"></a>
+    <div class="page-popup-slides-wrapper">
+      <ion-slides>
+        <ion-slide>
+          <img src="assets/slide/popup/1.png" class="page-popup-image" (click)="next()" class="page-popup-slides-first" />
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/slide/popup/2.png" class="page-popup-image" class="page-popup-slides-last" />
+        </ion-slide>
+      </ion-slides>
+    </div>
   </div>
 </ion-content>

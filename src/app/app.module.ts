@@ -15,7 +15,6 @@ import { RidePage } from '../pages/ride/ride';
 import { ProfilePage } from '../pages/profile/profile';
 import { LockPage } from '../pages/lock/lock';
 import { PopUpPage } from '../pages/popup/popup';
-import { ItemPage } from '../pages/item/item';
 
 import { SocketIoModule, SocketIoConfig } from 'ng-socket-io';
 const config: SocketIoConfig = { url: 'https://ducati-server-demo.herokuapp.com', options: {} };
@@ -32,8 +31,7 @@ const config: SocketIoConfig = { url: 'https://ducati-server-demo.herokuapp.com'
     RidePage,
     ProfilePage,
     LockPage,
-    PopUpPage,
-    ItemPage
+    PopUpPage
   ],
   imports: [
     BrowserModule,
@@ -52,8 +50,7 @@ const config: SocketIoConfig = { url: 'https://ducati-server-demo.herokuapp.com'
     RidePage,
     ProfilePage,
     LockPage,
-    PopUpPage,
-    ItemPage
+    PopUpPage
   ],
   providers: [
     StatusBar,
