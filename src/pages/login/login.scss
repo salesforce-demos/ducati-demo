@@ -15,4 +15,14 @@
     position: absolute;
     cursor: pointer;
   }
+  &-config-link {
+    display: block;
+    height: 100px;
+    width: 100px;
+    top: 95px;
+    left: 50%;
+    margin-left: -50px;
+    position: absolute;
+    cursor: pointer;
+  }
 }

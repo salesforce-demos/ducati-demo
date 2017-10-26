@@ -1,0 +1,11 @@
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Socket IO URL</ion-label>
+      <ion-input (ionChange)='changePreference($event)' placeholder="{{url}}"></ion-input>
+    </ion-item>
+  </ion-list>
+  <div class="center">
+    <button ion-button round (click)="close()">Close</button>
+  </div>
+</ion-content>

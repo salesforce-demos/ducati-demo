@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { FaceBookPage } from '../facebook/facebook';
+import { ConfigPage } from '../config/config';
 
 @Component({
   selector: 'page-login',
@@ -14,6 +15,10 @@ export class LoginPage {
 
   next() {
     this.nav.push(FaceBookPage);
+  }
+
+  config() {
+    this.nav.push(ConfigPage);
   }
 
 }
