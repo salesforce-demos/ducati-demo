@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { LoginPage } from '../login/login';
+import { DEFAULT_SOCKET_URL } from '../../constants';
 
 @Component({
   selector: 'page-config',
@@ -10,7 +11,7 @@ import { LoginPage } from '../login/login';
 export class ConfigPage {
   url: String;
   constructor(public nav: NavController, public storage: Storage) {
-    storage.get('url').then(url => this.url = url);
+    storage.get('url').then(url => this.url = (url || DEFAULT_SOCKET_URL));
   }
 
   changePreference(e) {
