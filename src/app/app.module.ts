@@ -4,6 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { IonicStorageModule } from '@ionic/storage';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { SocketIoModule } from 'ng-socket-io';
 
 import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
@@ -36,6 +37,7 @@ import { PopUpPage } from '../pages/popup/popup';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    SocketIoModule.forRoot({url: '', options: {}}),
     IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
